@@ -21,9 +21,11 @@ default = ["linkage"]
 
 linkage = ["sqlite3-src"]
 bundled = ["sqlite3-src/bundled"]
+ext-spellfix = ["sqlite3-src/ext-spellfix"]
 
 encryption = []
 
 [dependencies.sqlite3-src]
 version = "0.6"
 optional = true
+git = "https://github.com/mpfaff/sqlite3-src"
