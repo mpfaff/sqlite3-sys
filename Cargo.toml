@@ -21,6 +21,7 @@ default = ["linkage"]
 
 linkage = ["sqlite3-src"]
 bundled = ["sqlite3-src/bundled"]
+ext-fts5 = ["sqlite3-src/bundled"]
 ext-spellfix = ["sqlite3-src/ext-spellfix"]
 
 encryption = []

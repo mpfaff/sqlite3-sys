@@ -22,11 +22,15 @@ extern crate sqlite3_src;
 mod base;
 #[cfg(feature = "encryption")]
 mod encryption;
+#[cfg(feature = "ext-fts5")]
+mod ext_fts5;
 #[cfg(feature = "ext-spellfix")]
 mod ext_spellfix;
 
 pub use base::*;
 #[cfg(feature = "encryption")]
 pub use encryption::*;
+#[cfg(feature = "ext-fts5")]
+pub use ext_fts5::*;
 #[cfg(feature = "ext-spellfix")]
 pub use ext_spellfix::*;
